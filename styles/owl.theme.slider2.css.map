@@ -6,7 +6,7 @@
         "_theme.slider2.scss",
         "_colors.scss",
         "_fonts.scss",
-        "owl-core/_owl.dots.scss"
+        "_owl.dots.scss"
     ],
     "names": [],
     "file": "owl.theme.slider2.css"

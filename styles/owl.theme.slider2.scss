@@ -1,6 +1,6 @@
-@import "theme.slider2";
-@import "fonts";
-@import 'owl-core/owl.dots';
+@import 'theme.slider2';
+@import 'fonts';
+@import 'owl.dots';
 
 .owl-slider2 {
     @include owl-dots;
