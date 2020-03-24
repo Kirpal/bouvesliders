@@ -1,0 +1,126 @@
+@import "theme.slider2";
+@import "fonts";
+@import 'owl-core/owl.dots';
+
+.owl-slider2 {
+    @include owl-dots;
+    
+    .owl-nav-icon {
+        display: inline-flex;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        color: $color-white;
+        background: $color-black;
+        padding: 1em 0.5em;
+        box-sizing: border-box;
+        margin: 0;
+        transition: 0.1s color;
+        width: 42px;
+        height: 76px;
+        position: absolute;
+        top: 0;
+        z-index: 999;
+        top: 50%;
+        margin-top: -38px;
+    }
+
+    .owl-next {
+        right: 0;
+    }
+    .owl-prev {
+        left: 0;
+    }
+    
+    .owl-nav-icon:hover {
+        color: $color-white;
+    }
+    
+    .owl-dots {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        bottom: 2rem;
+        width: 100%;
+
+        .owl-dot:focus {
+            outline: none;
+        }
+
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    .owl-stage, .owl-item {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .slider-content {
+        width: 100%;
+        min-height: 60vh;
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        padding: 3rem 0rem;
+        padding-bottom: 8rem;
+        box-sizing: border-box;
+        background: $background-color;
+
+        @media screen and (max-width: 700px) {
+            padding: 0;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            background: $textbox-color;
+        }
+
+        .textbox {
+            background: $textbox-color;
+            width: 50%;
+            padding: 3rem;
+            padding-right: 8rem;
+            box-sizing: border-box;
+            display: inline-block;
+            position: relative;
+            right: -2.5rem;
+            max-width: 500px;
+
+            @media screen and (max-width: 700px) {
+                right: 0;
+                padding: 3rem;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            h1 {
+                font: $heading2;
+                margin-bottom: 0;
+            }
+    
+            p {
+                font: $body;
+                line-height: 1.5em;
+            }
+        }
+
+        img {
+            max-width: 500px;
+            position: relative;
+            left: -2.5rem;
+            width: 50%;
+            display: inline-block;
+
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
+                max-width: 100%;
+                left: 0;
+            }
+        }
+    }
+}

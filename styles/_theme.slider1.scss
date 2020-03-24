@@ -1,0 +1,14 @@
+/*
+ * 	Slider 1 theme - Owl Carousel CSS File
+ */
+
+ @import 'colors';
+ 
+ //dots
+ 
+ $dot-width:				8px !default;
+ $dot-height:			    8px !default;
+ $dot-rounded:		    	0px !default;
+ $dot-margin: 			    5px 7px !default;
+ $dot-background:		    $color-gray !default;
+ $dot-background-active:	$color-red !default;

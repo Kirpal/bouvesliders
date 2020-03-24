@@ -1,0 +1,97 @@
+@import "theme.slider1";
+@import "fonts";
+@import 'owl-core/owl.dots';
+
+.owl-slider1 {
+    @include owl-dots;
+    
+    .owl-nav-icon {
+        display: inline-flex;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        color: $color-red;
+        margin: 10px;
+        transition: 0.2s color;
+    }
+    
+    .owl-nav-icon:hover {
+        color: $color-white;
+    }
+    
+    .owl-nav-combined {
+        width: 100%;
+        padding-bottom: 2rem;
+        padding-top: 5rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+        background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0) 100%);
+
+        @media screen and (max-width: 700px) {
+            top: 0;
+            bottom: auto;
+            padding-bottom: 0;
+            padding-top: 1rem;
+        }
+    }
+    
+    .owl-dots {
+        display: inline-flex;
+        align-items: center;
+
+        .owl-dot:focus {
+            outline: none;
+        }
+    }
+
+    .slider-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+        color: $color-white;
+        padding-bottom: 8rem;
+        box-sizing: border-box;
+        background: linear-gradient( rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.8) 100%), url("https://cos.northeastern.edu/wp-content/uploads/2020/02/Hurricanes-MES.jpg");
+        background-size: cover;
+
+        @media screen and (max-width: 700px) {
+            padding-bottom: 0;
+            padding-top: 5rem;
+            background: $color-black;
+        }
+
+        .slider-image {
+            display: none;
+
+            @media screen and (max-width: 700px) {
+                display: block;
+            }
+        }
+        
+        .textbox {
+            padding: 4rem;
+            padding-bottom: 0;
+            max-width: 770px;
+
+            @media screen and (max-width: 700px) {
+                padding: 0 1.2rem;
+            }
+            
+            h1 {
+                font: $heading1;
+                margin-bottom: 0;
+            }
+    
+            p {
+                font: $body;
+                line-height: 1.5em;
+            }
+        }
+    }
+}

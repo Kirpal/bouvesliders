@@ -1,0 +1,159 @@
+/*
+ * 	Slider 1 theme - Owl Carousel CSS File
+ */
+/*
+ * 	Theme Colors
+ */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,600,900&display=swap");
+.owl-slider1 .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-slider1 .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.owl-slider1 .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 5px 7px;
+  background: #868686;
+  display: block;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  border-radius: 0px;
+}
+
+.owl-slider1 .owl-dots .owl-dot.active span {
+  background: #D41B2C;
+}
+
+.owl-slider1 .owl-nav-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  color: #D41B2C;
+  margin: 10px;
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
+}
+
+.owl-slider1 .owl-nav-icon:hover {
+  color: #FFF;
+}
+
+.owl-slider1 .owl-nav-combined {
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), color-stop(60%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media screen and (max-width: 700px) {
+  .owl-slider1 .owl-nav-combined {
+    top: 0;
+    bottom: auto;
+    padding-bottom: 0;
+    padding-top: 1rem;
+  }
+}
+
+.owl-slider1 .owl-dots {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.owl-slider1 .owl-dots .owl-dot:focus {
+  outline: none;
+}
+
+.owl-slider1 .slider-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  color: #FFF;
+  padding-bottom: 8rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("https://cos.northeastern.edu/wp-content/uploads/2020/02/Hurricanes-MES.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.8) 100%), url("https://cos.northeastern.edu/wp-content/uploads/2020/02/Hurricanes-MES.jpg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .owl-slider1 .slider-content {
+    padding-bottom: 0;
+    padding-top: 5rem;
+    background: #000;
+  }
+}
+
+.owl-slider1 .slider-content .slider-image {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .owl-slider1 .slider-content .slider-image {
+    display: block;
+  }
+}
+
+.owl-slider1 .slider-content .textbox {
+  padding: 4rem;
+  padding-bottom: 0;
+  max-width: 770px;
+}
+
+@media screen and (max-width: 700px) {
+  .owl-slider1 .slider-content .textbox {
+    padding: 0 1.2rem;
+  }
+}
+
+.owl-slider1 .slider-content .textbox h1 {
+  font: 900 3.5rem Roboto, sans-serif;
+  margin-bottom: 0;
+}
+
+.owl-slider1 .slider-content .textbox p {
+  font: 400 1.4rem Roboto, sans-serif;
+  line-height: 1.5em;
+}
+/*# sourceMappingURL=owl.theme.slider1.css.map */

@@ -1,0 +1,17 @@
+/*
+ * 	Slider 2 theme - Owl Carousel CSS File
+ */
+
+@import 'colors';
+
+ $background-color:     $color-beige !default;
+ $textbox-color:        $color-red !default;
+ 
+ //dots
+ 
+ $dot-width:			1rem !default;
+ $dot-height:			0.4rem !default;
+ $dot-rounded:			0px !default;
+ $dot-margin: 			5px 7px !default;
+ $dot-background:		$color-gray !default;
+ $dot-background-active:	$color-black !default;

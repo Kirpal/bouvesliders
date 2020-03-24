@@ -1,0 +1,55 @@
+@import 'fonts';
+@import 'colors';
+
+.slider3 {
+    position: relative;
+    width: 100%;
+
+    video {
+        width: 100%;
+    }
+
+    ul {
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        bottom: 3rem;
+        list-style: none;
+        transform: translate(-50%);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        @media screen and (max-width: 1000px) {
+            position: relative;
+            bottom: 0;
+            padding: 3rem;
+            background: $color-black;
+        }
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        li {
+            margin: 1rem;
+
+            a {
+                text-decoration: none;
+                padding: 1rem;
+                background: $color-black;
+                border: 2px solid $color-white;
+                color: $color-white;
+                font: $body;
+                font-size: 1rem;
+                display: inline-block;
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+        }
+    }
+}
